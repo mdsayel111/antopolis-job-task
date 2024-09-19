@@ -4,7 +4,7 @@ import { TAnimal } from "../animal/types";
 // create animal schema
 const animalSchema = new Schema<TAnimal>({
     name: { type: String, required: [true, "Animal Name is required!"] },
-    category: { type: mongoose.Types.ObjectId, required: [true, "Category name is required!"], unique: true },
+    category: { type: mongoose.Types.ObjectId, required: [true, "Category name is required!"], unique: true, ref: "Category" },
     img: { type: String, required: [true, "Image url is required!"] }
 }, { timestamps: true });
 

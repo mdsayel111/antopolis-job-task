@@ -17,3 +17,11 @@ export const createAnimalService = (data: TAnimal) => {
 
     return result
 }
+
+// create get animal service
+export const getAnimalService = async (query: Record<string, unknown>) => {
+    // find animal from DB
+    const result = await Animal.find(query).populate("category")
+
+    return result
+}

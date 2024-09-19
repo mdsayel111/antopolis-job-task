@@ -1,5 +1,5 @@
 import express from "express";
-import { createCategoryController } from "./controllers";
+import { createCategoryController, getAllCategoryController } from "./controllers";
 import validateRequestBody from "../../middlewares/HOF/schema-validation-middleware";
 import { categoryValidationSchema } from "./validation-schema";
 
@@ -9,6 +9,9 @@ const categoryRouter = express.Router();
 
 // create category api
 categoryRouter.post("/", validateRequestBody(categoryValidationSchema), createCategoryController)
+
+// get all category api
+categoryRouter.get("/", getAllCategoryController)
 
 
 export default categoryRouter;
