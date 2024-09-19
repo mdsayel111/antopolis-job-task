@@ -22,11 +22,12 @@ app.use(express.json());
 
 app.use("/api", router);
 
-// default route
+// root route
 app.get("/", (req: Request, res: Response) => {
   res.send("Hello World!");
 });
 
+// not found route
 app.all("*", notFound);
 
 // global error handler

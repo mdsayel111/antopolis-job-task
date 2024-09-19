@@ -7,7 +7,7 @@ import mongoose from "mongoose";
 import { ZodError } from "zod";
 import appErrorHandler from "../error-handler/app-error-handler";
 import mongooseCastErrorHandler from "../error-handler/mongoose-cast-error-handler";
-import mongooseDuplicateKeyErrorHandler from "../error-handler/mongoose-error";
+import mongooseDuplicateKeyErrorHandler from "../error-handler/mongoose-duplicate-key-error";
 import mongooseValidationErrorHandler from "../error-handler/mongoose-validation-error-handler";
 import zodErrorHandler from "../error-handler/zod-error-handler";
 import AppError from "../errors/app-error";

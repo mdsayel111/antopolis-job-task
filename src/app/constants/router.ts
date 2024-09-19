@@ -1,7 +1,11 @@
+import categoryRouter from "../modules/category/route";
+import { TRouterArr } from "../types/router";
+
 // array of all router path and roueter
-const routers = [
+const routers: TRouterArr = [
     {
-        path: "/auth",
+        path: "/category",
+        router: categoryRouter
     }
 ];
 

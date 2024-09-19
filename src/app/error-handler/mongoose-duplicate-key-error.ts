@@ -7,7 +7,7 @@ const mongooseDuplicateKeyErrorHandler: TErrorHandler = (err) => {
   const dupFeildName = Object.keys(err.keyPattern)[0];
 
   // creat message
-  const message = dupFeildName + " is already exist!";
+  const message = "This " + dupFeildName + " is already exist!";
 
   // return errObj
   return {
