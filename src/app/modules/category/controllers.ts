@@ -10,7 +10,7 @@ export const createCategoryController: RequestHandler = catchAsyncError(async (r
     const result = await createCategoryService(data)
 
     // send response
-    sendResponse(res, { message: "Category retrive successful!", data: result })
+    sendResponse(res, { message: "Category created successful!", data: result })
 
 
 }) 
