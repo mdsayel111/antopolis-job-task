@@ -40,7 +40,7 @@ const main = async () => {
   } catch (error) {
     console.log(error);
   }
-}
+};
 
 // call the main function
 main();

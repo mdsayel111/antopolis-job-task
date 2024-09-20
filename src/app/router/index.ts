@@ -6,7 +6,6 @@ import routers from "../constants/router";
 const router = express.Router();
 
 // add routers in /api router
-addRouters(router, routers)
-
+addRouters(router, routers);
 
 export default router;

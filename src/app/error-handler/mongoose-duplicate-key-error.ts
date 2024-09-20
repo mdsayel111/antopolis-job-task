@@ -1,6 +1,5 @@
 import { TErrorHandler } from "../types/error-handler";
 
-
 // creat mongoose duplicate key error handler
 const mongooseDuplicateKeyErrorHandler: TErrorHandler = (err) => {
   // duplicate feild anem

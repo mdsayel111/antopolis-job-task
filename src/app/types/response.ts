@@ -2,7 +2,7 @@
 
 // create TResData type
 export type TResData = {
-    token?: string;
-    message: string;
-    data: any;
-  };
+  token?: string;
+  message: string;
+  data: any;
+};

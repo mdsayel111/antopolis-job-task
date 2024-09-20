@@ -3,6 +3,7 @@ import notFound from "./app/middlewares/not-found-route-hanlder-middleware";
 import router from "./app/router";
 import cors from "cors";
 import globalErrorHandleMiddleware from "./app/middlewares/global-error-handler-middleware";
+import config from "./app/config";
 
 // creat app
 const app = express();
@@ -10,9 +11,7 @@ const app = express();
 // cors setup
 app.use(
   cors({
-    origin: [
-      "http://localhost:3000",
-    ],
+    origin: JSON.parse(config.origin as string),
     credentials: true,
   }),
 );

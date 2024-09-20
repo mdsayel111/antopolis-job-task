@@ -5,23 +5,23 @@ import { TAnimal } from "./types";
 
 // create create animal service
 export const createAnimalService = (data: TAnimal) => {
-    // find category from DB
-    const isCategoryExist = Category.findById(data.category)
+  // find category from DB
+  const isCategoryExist = Category.findById(data.category);
 
-    // if category not exist
-    if (!isCategoryExist) {
-        throw new AppError(400, "Invalid category id!")
-    }
+  // if category not exist
+  if (!isCategoryExist) {
+    throw new AppError(400, "Invalid category id!");
+  }
 
-    const result = Animal.create(data)
+  const result = Animal.create(data);
 
-    return result
-}
+  return result;
+};
 
 // create get animal service
 export const getAnimalService = async (query: Record<string, unknown>) => {
-    // find animal from DB
-    const result = await Animal.find(query).populate("category")
+  // find animal from DB
+  const result = await Animal.find(query).populate("category");
 
-    return result
-}
+  return result;
+};

@@ -4,14 +4,14 @@ import { TRouterArr } from "../types/router";
 
 // array of all router path and roueter
 const routers: TRouterArr = [
-    {
-        path: "/category",
-        router: categoryRouter
-    },
-    {
-        path: "/animal",
-        router: animalRouter
-    }
+  {
+    path: "/category",
+    router: categoryRouter,
+  },
+  {
+    path: "/animal",
+    router: animalRouter,
+  },
 ];
 
-export default routers
+export default routers;

@@ -4,12 +4,12 @@
 
 // create error obj type
 export type TErrorObj = {
-    statusCode?: number;
-    message: string;
-    error: { path: string; message: string }[];
-    redirectPath?: string;
-    stack: string | undefined;
-  };
-  
+  statusCode?: number;
+  message: string;
+  error: { path: string; message: string }[];
+  redirectPath?: string;
+  stack: string | undefined;
+};
+
 // define error handler type
 export type TErrorHandler = (err: any) => TErrorObj;

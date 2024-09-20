@@ -1,7 +1,7 @@
-import { Router } from "express"
+import { Router } from "express";
 
 // create TRouterArray type
 export type TRouterArr = {
-    path: string,
-    router: Router
-}[]
+  path: string;
+  router: Router;
+}[];

@@ -6,12 +6,14 @@ import { createAnimalController, getAnimalController } from "./controllers";
 // create /category router
 const animalRouter = express.Router();
 
-
 // create animal api
-animalRouter.post("/", validateRequestBody(animalValidationSchema), createAnimalController)
+animalRouter.post(
+  "/",
+  validateRequestBody(animalValidationSchema),
+  createAnimalController,
+);
 
 // get animal api
-animalRouter.get("/", getAnimalController)
-
+animalRouter.get("/", getAnimalController);
 
 export default animalRouter;

@@ -1,5 +1,5 @@
 // create TCategory type
 export type TCategory = {
-    _id: string;
-    name: string;
-}
+  _id: string;
+  name: string;
+};
